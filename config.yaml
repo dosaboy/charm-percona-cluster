@@ -111,9 +111,17 @@ options:
     type: string
     default:
     description: |
-      The IP address and netmask of the 'access' network (e.g., 192.168.0.0/24)
+      The IP address and netmask of the 'access' network (e.g. 192.168.0.0/24)
       .
       This network will be used for access to database services.
+  cluster-network:
+    type: string
+    default:
+    description: |
+      The IP address and netmask of the cluster (replication) network (e.g.
+      192.168.0.0/24)
+      .
+      This network will be used for wsrep_cluster replication.
   prefer-ipv6:
     type: boolean
     default: False
